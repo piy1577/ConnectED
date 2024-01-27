@@ -1,0 +1,320 @@
+.profileWrapper {
+  width: calc(100% - 350px);
+  position: absolute;
+  height: fit-content;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins";
+
+  .profile {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom right, #ffffff26, #ffffff00);
+    height: 50vh;
+    width: 70vw;
+    justify-content: center;
+    height: fit-content;
+    margin: 1.5rem;
+    border-radius: 10px;
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      > h1 {
+        margin: 1rem;
+      }
+      > img {
+        width: 111px;
+        height: 111px;
+        border-radius: 50%;
+        border: 4px solid white;
+        margin: 1rem 2rem;
+        cursor: pointer;
+      }
+    }
+
+    .inputWrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 1rem;
+      > label {
+        align-self: flex-start;
+        margin-bottom: 0.3rem;
+      }
+      > input {
+        margin-bottom: 1rem;
+        padding: 0.3rem;
+        border-radius: 5px;
+        width: 46vw;
+        padding: 0.7rem;
+        border: 1px solid #ffffff55;
+        background: linear-gradient(to right, #ffffff75, #ffffff66);
+        color: white;
+
+        &::placeholder {
+          color: rgb(233, 225, 225);
+        }
+      }
+    }
+  }
+  .login_info {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom right, #ffffff26, #ffffff00);
+    height: 50vh;
+    width: 70vw;
+    justify-content: center;
+    height: fit-content;
+    padding: 1rem;
+    margin: 1.5rem;
+    border-radius: 10px;
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .inputWrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 1rem;
+      > label {
+        align-self: flex-start;
+        margin-bottom: 0.3rem;
+      }
+      > input {
+        margin-bottom: 1rem;
+        padding: 0.3rem;
+        border-radius: 5px;
+        width: 46vw;
+        padding: 0.7rem;
+        border: 1px solid #ffffff55;
+        background: linear-gradient(to right, #ffffff75, #ffffff66);
+        color: white;
+
+        &::placeholder {
+          color: rgb(233, 225, 225);
+        }
+      }
+    }
+  }
+  .upi_id {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom right, #ffffff26, #ffffff00);
+    height: 50vh;
+    width: 70vw;
+    justify-content: center;
+    height: fit-content;
+    padding: 1rem;
+    margin: 1.5rem;
+    border-radius: 10px;
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .inputWrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin: 1rem;
+      > label {
+        align-self: flex-start;
+        margin-bottom: 0.3rem;
+      }
+      > input {
+        margin-bottom: 1rem;
+        padding: 0.3rem;
+        border-radius: 5px;
+        width: 46vw;
+        padding: 0.7rem;
+        border: 1px solid #ffffff55;
+        background: linear-gradient(to right, #ffffff75, #ffffff66);
+        color: white;
+
+        &::placeholder {
+          color: rgb(233, 225, 225);
+          > text {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .password {
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    border-radius: 5px;
+    width: 46vw;
+    padding: 0.7rem;
+    border: 1px solid #ffffff55;
+    background: linear-gradient(to right, #ffffff75, #ffffff66);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+
+    &::placeholder {
+      color: rgb(233, 225, 225);
+    }
+    > input {
+      background: transparent;
+      outline: none;
+      border: none;
+      color: white;
+    }
+    > button {
+      background: transparent;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  .sell {
+    padding: 1rem;
+    font-size: 17px;
+    font-weight: bolder;
+    color: black;
+    background: linear-gradient(to right, #7fe786, #58a7fe);
+    width: 55vw;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    margin-top: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    >button{
+      border: none;
+      background: transparent;
+      font-weight:bolder;
+      font-size: 1.5rem;
+      width: 55vw;
+      height: 2rem;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .profileWrapper {
+    .profile {
+      width: 60vw;
+      margin: 1.5rem 0.5rem;
+    }
+    .login_info {
+      width: 60vw;
+      margin: 1.5rem 0.5rem;
+    }
+    .upi_id {
+      width: 60vw;
+      margin: 1.5rem 0.5rem;
+    }
+  }
+}
+// @media (max-width: 786px) {
+//   .profileWrapper {
+//     width: calc(100% - 270px);
+//     .profile {
+//       width: 55vw;
+//     }
+//     .login_info {
+//       width: 55vw;
+//     }
+//     .upi_id {
+//       width: 55vw;
+//     }
+//   }
+// }
+@media (max-width: 900px) {
+  .profileWrapper {
+    padding-bottom: 90px;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    .profile {
+      width: 70vw;
+      margin: 0;
+      padding: 1rem;
+      > div {
+        width: fit-content;
+        > h1 {
+          font-size: large;
+        }
+        .inputWrapper {
+          padding: 0;
+          margin: 0 !important;
+          > input {
+            width: 60vw;
+          }
+        }
+      }
+    }
+    .login_info {
+      width: 70vw;
+      padding: 1rem;
+      > div {
+        width: fit-content;
+        > h1 {
+          font-size: large;
+        }
+        .inputWrapper {
+          padding: 0;
+          margin: 0 !important;
+          > input {
+            width: 60vw;
+          }
+        }
+      }
+    }
+    .upi_id {
+      width: 70vw;
+      margin: 0;
+      padding: 1rem;
+      > div {
+        width: fit-content;
+        > h1 {
+          font-size: large;
+        }
+        .inputWrapper {
+          padding: 0;
+          margin: 0 !important;
+          > input {
+            width: 60vw;
+          }
+        }
+      }
+    }
+    .sell {
+      padding: 1.5rem 1rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      cursor: pointer;
+      >button{
+        cursor: pointer;
+        font-size: 15px;
+      }
+    }
+    
+    .password {
+      display: flex;
+      justify-content: space-between;
+    width: 60vw;
+    >input{
+      width: 120px
+    }
+  }
+  }
+}

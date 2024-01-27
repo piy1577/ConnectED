@@ -1,0 +1,138 @@
+.login {
+    margin: auto;
+    width: 550px;
+    height: fit-content;
+    border: 1px solid #ffffff;
+    padding: 2rem;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, #ffffff26, #ffffff00);
+
+    >h1 {
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1rem 3rem;
+        font-size: 30px;
+    }
+
+    >form {
+        display: flex;
+        flex-direction: column;
+
+        >input {
+            margin-bottom: 1rem;
+            padding: 0.3rem;
+            border-radius: 5px;
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #ffffff55;
+            background: linear-gradient(to right, #ffffff75, #ffffff66);
+            color: white;
+
+            &::placeholder {
+                color: rgb(233, 225, 225);
+            }
+        }
+
+        .password {
+            margin-bottom: 1rem;
+            padding: 0.3rem;
+            border-radius: 5px;
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #ffffff55;
+            background: linear-gradient(to right, #ffffff75, #ffffff66);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+
+            >input {
+                background: transparent;
+                outline: none;
+                border: none;
+                color: white;
+
+                &::placeholder {
+                    color: rgb(233, 225, 225);
+                }
+            }
+
+            >button {
+                background: transparent;
+                border: none;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+        >label {
+            margin-bottom: 0.4rem;
+        }
+
+        >span {
+            align-self: center;
+            font-size: larger;
+        }
+
+        > :nth-child(5) {
+            padding: 0.5rem;
+            font-size: 17px;
+            font-weight: bolder;
+            color: black;
+            background: linear-gradient(to right, #7fe786, #58a7fe);
+            width: 120px;
+            border-radius: 10px;
+            margin-top: 0.4rem;
+            cursor: pointer;
+        }
+    }
+
+    .other {
+        display: flex;
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 0.5rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        border: 1px solid #ffffff55;
+        text-decoration: none;
+        color: skyblue;
+        cursor: pointer;
+
+        >svg {
+            font-size: 2rem;
+            border-radius: 50%;
+        }
+    }
+}
+
+.other2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem;
+    text-transform: uppercase;
+
+    :nth-child(1) {
+        margin-left: 0.5rem;
+        text-decoration: none;
+        color: skyblue;
+    }
+}
+
+@media (max-width: 600px) {
+    .login {
+        width: 95vw;
+        font-size: 10px;
+
+        >form {
+            >input {
+                &::placeholder {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

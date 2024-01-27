@@ -1,0 +1,93 @@
+// .chats-wrapper {
+//     border: 1px solid white;
+//     width: calc(100% - 18vw);
+//     height: calc(100% - 15vh);
+//     background: linear-gradient(to right bottom, #ffffff26, #ffffff00);
+//     position: absolute;
+//     border-radius: 10px;
+//     right: 30px;
+//     display: flex;
+//     overflow: hidden;
+//     ::-webkit-scrollbar {
+//         background: transparent;
+//         width: 5px;
+//     }
+//     ::-webkit-scrollbar-thumb {
+//         background-color: #ffffff;
+//     }
+// }
+
+// @media (max-width: 900px) {
+//     .chats-wrapper {
+//         width: calc(100% - 300px);
+//     }
+// }
+// @media (max-width: 600px) {
+//     .chats-wrapper {
+//         width: calc(100% - 60px);
+//     }
+// }
+
+.chats-wrapper {
+    // border: 1px solid white;
+    background: linear-gradient(to right bottom, #ffffff26, #ffffff00);
+    width: calc(100% - 500px);
+    height: 85vh;
+    transform: translateX(150px);
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+@media (max-width: 1200px) {
+    .chats-wrapper {
+        width: 70vw;
+
+        .contacts {
+            width: 25vw;
+        }
+
+        .chats {
+            width: 70vw;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .chats-wrapper {
+        width: 100vw;
+        height: 70vh;
+        transform: translateX(0);
+        margin-bottom: 90px;
+
+        .contacts {
+            width: 100vw;
+        }
+
+        .chats {
+            width: 100vw;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .chats-wrapper {
+        width: 95vw;
+        height: 75vh;
+        transform: translateX(0);
+        margin-bottom: 90px;
+
+        .contacts {
+            width: 90vw;
+        }
+    }
+}

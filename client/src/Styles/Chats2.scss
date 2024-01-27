@@ -1,0 +1,103 @@
+.chats {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVb_svx38N7ZUq7gXcKDA_UwmQeawl01d17g&usqp=CAU");
+    width: calc(100% - 300px);
+    display: grid;
+    height: 100%;
+    overflow: hidden scroll;
+    grid-template-areas: "a" "b" "b" "b" "b" "b" "b" "b" "b" "b" "b" "b" "b" "b" "b" "c";
+
+    .chat-profile {
+        width: 100%;
+        grid-area: a;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 20px;
+        background-color: #000000aa;
+
+        .back {
+            width: 30px;
+            height: 30px;
+            background: transparent;
+            color: white;
+            border: none;
+            font-size: 30px;
+        }
+
+        >img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            // padding: 20px;
+        }
+    }
+
+    .chat-wrapper {
+        grid-area: b;
+        overflow: scroll;
+        padding: 10px;
+
+        .chat {
+            width: fit-content;
+            padding: 10px 16px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .you {
+            display: flex;
+            justify-content: center;
+            background-color: #7fe787;
+            color: black;
+            margin: 0 10px 10px auto;
+
+            >div {
+                min-height: fit-content;
+            }
+        }
+
+        .user {
+            background-color: #000000aa;
+        }
+    }
+
+    .text-input {
+        grid-area: c;
+        background-color: #000000aa;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 50px;
+        padding: 10px;
+
+        >input {
+            width: 90%;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        >svg {
+            padding: 10px;
+            border-radius: 50%;
+            color: #000;
+            background-color: #7fe787;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .chats {
+        width: calc(100% - 150px);
+    }
+}
+
+@media (max-width: 600px) {
+    .chats {
+        width: 100%;
+
+        .chat-profile {
+            font-size: 10px;
+        }
+    }
+}

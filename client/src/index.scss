@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,900;1,400;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #141414, #000000);
+  color: white;
+  font-family: poppins;
+  overflow-x: hidden;
+}
+
+@import "./Styles/Login.scss";
+@import "./Styles/Header.scss";
+@import "./Styles/Navbar.scss";
+@import "./Styles/Signup.scss";
+@import "./Styles/Card.scss";
+@import "./Styles/Dashboard.scss";
+@import "./Styles/Products.scss";
+@import "./Styles/profile.scss";
+@import "./Styles/Cart.scss";
+@import "./Styles/Card2.scss";
+@import "./Styles/chat.scss";
+@import "./Styles/Chats2.scss";
+@import "./Styles/Contact.scss";
+
+::-webkit-scrollbar {
+  background: linear-gradient(#7fe786, #58a7fe);
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00000088;
+}
+
+@media (max-width: 600px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
